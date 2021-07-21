@@ -1,13 +1,17 @@
 import colors from '../../colors';
 
 const styles = {
-  headerStyle: {
-    backgroundColor: colors.darkGray,
-    shadowColor: colors.darkGray,
-    shadowOpacity: 0,
+  navigator: {
+    headerStyle: {
+      backgroundColor: colors.darkGray,
+      shadowColor: colors.darkGray,
+      shadowOpacity: 0,
+    },
+    headerTintColor: colors.whitesmoke,
+    animationEnabled: false,
   },
-  headerTintColor: colors.whitesmoke,
-  headerShown: false,
+  home: {title: 'Home', headerShown: false},
+  details: {title: 'Details'},
 };
 
 export default styles;

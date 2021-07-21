@@ -1,17 +1,12 @@
-import React, {useEffect} from 'react';
-import {useNavigation, useRoute} from '@react-navigation/native';
+import React from 'react';
+import {useRoute} from '@react-navigation/native';
 import {View, Text, Image, ScrollView} from 'react-native';
 import styles from './styles';
 
 const Screen = () => {
-  const navigation = useNavigation();
   const route = useRoute();
 
   const item = route.params;
-
-  useEffect(() => {
-    navigation.setOptions({title: 'Details', headerShown: false});
-  }, []);
 
   return (
     <ScrollView>

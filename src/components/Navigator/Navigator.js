@@ -8,9 +8,13 @@ const Stack = createStackNavigator();
 
 const Navigation = () => {
   return (
-    <Stack.Navigator screenOptions={styles}>
-      <Stack.Screen name="Home" component={TabViewBar} />
-      <Stack.Screen name="Details" component={Details} />
+    <Stack.Navigator screenOptions={styles.navigator}>
+      <Stack.Screen name="Home" component={TabViewBar} options={styles.home} />
+      <Stack.Screen
+        name="Details"
+        component={Details}
+        options={styles.details}
+      />
     </Stack.Navigator>
   );
 };
