@@ -7,6 +7,7 @@ const styles = {
     shadowOpacity: 0,
   },
   headerTintColor: colors.whitesmoke,
+  headerShown: false,
 };
 
 export default styles;

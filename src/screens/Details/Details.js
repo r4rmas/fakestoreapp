@@ -10,7 +10,7 @@ const Screen = () => {
   const item = route.params;
 
   useEffect(() => {
-    navigation.setOptions({title: 'Details'});
+    navigation.setOptions({title: 'Details', headerShown: false});
   }, []);
 
   return (
