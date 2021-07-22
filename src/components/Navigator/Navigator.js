@@ -4,9 +4,7 @@ import TabViewBar from '../TabViewBar/TabViewBar';
 import Details from '../../screens/Details/Details';
 import styles from './styles';
 
-const Stack = createStackNavigator();
-
-const Navigation = () => {
+const Navigator = () => {
   return (
     <Stack.Navigator screenOptions={styles.navigator}>
       <Stack.Screen name="Home" component={TabViewBar} options={styles.home} />
@@ -19,4 +17,6 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+const Stack = createStackNavigator();
+
+export default Navigator;

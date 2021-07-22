@@ -1,0 +1,2 @@
+const word = "HOLA"
+console.log(word.contains("HOLA")

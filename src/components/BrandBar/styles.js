@@ -1,14 +1,14 @@
 import {StyleSheet} from 'react-native';
-import colors from '../../colors';
+import Color from '../../Color';
 
 const styles = StyleSheet.create({
   brandBar: {
-    backgroundColor: colors.darkGray,
+    backgroundColor: Color.darkGray,
     padding: 12,
     paddingLeft: 16,
   },
   brand: {
-    color: colors.whitesmoke,
+    color: Color.whitesmoke,
     fontSize: 20,
     fontWeight: 'bold',
   },

@@ -1,9 +1,9 @@
 import {StyleSheet} from 'react-native';
-import colors from '../../colors';
+import Color from '../../Color';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.whitesmoke,
+    backgroundColor: Color.whitesmoke,
     flex: 1,
   },
 });

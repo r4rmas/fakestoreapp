@@ -1,27 +1,21 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {View, FlatList} from 'react-native';
+import {useSelector} from 'react-redux';
 import Item from '../../components/Item/Item';
 import Product from '../../components/Feed/Product';
 import styles from './styles';
 
 const Screen = () => {
-  const [products, setProducts] = useState([]);
-
-  const getProducts = () =>
-    fetch('https://fakestoreapi.com/products/')
-      .then(response => response.json())
-      .then(data => setProducts(data));
-
-  useEffect(() => getProducts(), []);
+  const items = useSelector(state => state.items);
 
   return (
     <View style={styles.container}>
       <FlatList
-        data={products}
+        data={items}
         renderItem={({item}) => <Item data={item} wrappedComponent={Product} />}
       />
     </View>
   );
 };
 
-export default Screen;
+export default React.memo(Screen);

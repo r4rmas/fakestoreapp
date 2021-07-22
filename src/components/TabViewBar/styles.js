@@ -1,9 +1,9 @@
 import {StyleSheet} from 'react-native';
-import colors from '../../colors';
+import Color from '../../Color';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.darkGray,
+    backgroundColor: Color.darkGray,
   },
   scene: {
     flex: 1,

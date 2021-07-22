@@ -1,17 +1,17 @@
 import {StyleSheet} from 'react-native';
-import colors from '../../colors';
+import Color from '../../Color';
 
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: colors.whitesmoke,
+    backgroundColor: Color.whitesmoke,
     flex: 1,
     paddingHorizontal: 20,
     paddingTop: 14,
     paddingBottom: 20,
   },
   containerPrice: {
-    backgroundColor: colors.yellow,
+    backgroundColor: Color.yellow,
   },
   title: {
     fontSize: 18,
