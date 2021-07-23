@@ -6,7 +6,7 @@ import styles from './styles';
 
 const Navigator = () => {
   return (
-    <Stack.Navigator screenOptions={styles.navigator}>
+    <Stack.Navigator headerMode="float" screenOptions={styles.navigator}>
       <Stack.Screen name="Home" component={TabViewBar} options={styles.home} />
       <Stack.Screen
         name="Details"

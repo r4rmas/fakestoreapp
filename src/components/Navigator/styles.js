@@ -1,4 +1,5 @@
 import Color from '../../Color';
+import {transition} from './transitions';
 
 const styles = {
   navigator: {
@@ -8,7 +9,10 @@ const styles = {
       shadowOpacity: 0,
     },
     headerTintColor: Color.whitesmoke,
-    animationEnabled: false,
+    transitionSpec: {
+      open: transition,
+      close: transition,
+    },
   },
   home: {title: 'Home', headerShown: false},
   details: {title: 'Details'},
